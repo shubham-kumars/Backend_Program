@@ -1,0 +1,24 @@
+:root {
+  --bg: #0f1221;
+  --panel: #171a2d;
+  --panel-2: #202544;
+  --text: #f0f3ff;
+  --muted: #9ba4d2;
+  --accent: #7c9cff;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, system-ui, sans-serif; background: radial-gradient(circle at top, #1e2350, var(--bg)); color: var(--text); }
+.app-shell { height: 100vh; display: flex; flex-direction: column; }
+header { padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; background: rgba(10,12,24,.7); border-bottom: 1px solid #2f3768; }
+h1 { margin: 0; font-size: 20px; }
+button { background: linear-gradient(90deg, #5f87ff, #7b5cff); color: white; border: none; border-radius: 10px; padding: 10px 14px; font-weight: 600; cursor: pointer; }
+.canvas { flex: 1; }
+.node-card { min-width: 210px; background: linear-gradient(165deg, var(--panel), var(--panel-2)); border: 1px solid #333d75; border-radius: 12px; padding: 10px 12px; box-shadow: 0 12px 20px rgba(0,0,0,.25); }
+.node-header h4 { margin: 0; font-size: 14px; }
+.node-header span { color: var(--muted); font-size: 11px; }
+.node-content p { margin: 8px 0 0; color: #d7defe; font-size: 13px; }
+.text-editor { width: 100%; border-radius: 8px; border: 1px solid #4b5699; background: #0f1223; color: #fff; resize: none; padding: 8px; margin-top: 8px; }
+small { color: #9fc2ff; display: block; margin-top: 6px; }
+@media (max-width: 720px) {
+  header { flex-direction: column; gap: 10px; align-items: flex-start; }
+}
